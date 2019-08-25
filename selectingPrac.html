@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		div {
+			display: visible;
+	    	right: 0;
+	    	position: fixed;
+	    	margin: 100px;
+	    	background: rgba(0, 0, 0, 0.6);
+	    	height: 100px;
+	    	width: 100%;
+		}
+	</style>
+
+	<div>Div 1</div>
+	<div class="highlight">Div 2</div>
+	<div id="third">Div 3</div>
+	<div class="highlight">Div 4</div>
+	<div id="done"></div>
+	<button>Fade these boxes</button>
+</body>
+
+
+<script type="text/javascript">
+
+	$('button').click(function () {
+        $('div').slideToggle(600);
+    });
+
+</script>
+
+</html>
